@@ -1,4 +1,3 @@
-// 基礎的 Service Worker 監聽事件
 self.addEventListener('install', (event) => {
 self.skipWaiting();
 console.log('PWA Service Worker 已安裝');
