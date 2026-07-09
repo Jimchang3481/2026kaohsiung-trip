@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高雄衛武營直笛音樂會．三日遊</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-pink: #f43f5e;
+            --accent-green: #10b981;
+            --highlight: #f59e0b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            font-size: 22px; 
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: 900;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #f43f5e, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.1em;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .day-card {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            padding: 35px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+            border: 1px solid #334155;
+        }
+
+        .day-header {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .day-header::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 35px;
+            background-color: var(--accent-pink);
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+
+        .timeline {
+            border-left: 3px dashed #475569;
+            margin-left: 15px;
+            padding-left: 25px;
+        }
+
+        .event {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .event::before {
+            content: "•";
+            position: absolute;
+            left: -33px;
+            color: var(--accent-pink);
+            font-size: 1.5em;
+            top: -5px;
+        }
+
+        .time {
+            font-weight: bold;
+            color: var(--highlight);
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .spot-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin: 15px 0;
+            border: 1px solid #475569;
+        }
+
+        .spot-desc {
+            font-size: 0.9em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            padding-left: 5px;
+        }
+
+        /* 互動折疊選單樣式 */
+        details {
+            background-color: #0f172a;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-top: 15px;
+            border: 1px solid #475569;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        details[open] {
+            border-color: var(--accent-green);
+        }
+
+        summary {
+            font-weight: bold;
+            color: var(--text-main);
+            outline: none;
+            user-select: none;
+        }
+
+        details ul {
+            margin: 10px 0 0 0;
+            padding-left: 25px;
+            font-size: 0.95em;
+            color: #cbd5e1;
+            cursor: default;
+        }
+
+        details li {
+            margin-bottom: 10px;
+        }
+
+        .toilet-tag {
+            background-color: #0284c7;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .map-link {
+            display: inline-block;
+            margin-left: 12px;
+            padding: 4px 12px;
+            background-color: #3b82f6;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.7em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.1s, background-color 0.2s;
+            vertical-align: middle;
+        }
+
+        .map-link:active {
+            transform: scale(0.95); 
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 高雄衛武營直笛音樂會．三日遊</h1>
+    <div class="subtitle"> 高評價美食 ｜ 名勝景點 ｜ 輕鬆遊高雄 </div>
+
+    <div class="day-card">
+        <div class="day-header">Day 1：7/19 (星期日) ｜ 南下與草地音樂會</div>
+        <div class="timeline">
+            <div class="event"><span class="time">08:00</span>桃園開車出發，快樂啟航</div>
+            <div class="event"><span class="time">09:30</span> 清水服務區休息<a href="https://www.google.com/maps/place/%E6%B8%85%E6%B0%B4%E6%9C%8D%E5%8B%99%E5%8D%80/@24.2812242,120.5987964,1402m/data=!3m2!1e3!4b1!4m6!3m5!1s0x346913ecf69b99bf:0x961430d5c3397117!8m2!3d24.2812242!4d120.6013713!16s%2Fg%2F155sgwzc?authuser=1&entry=ttu&g_ep=EgoyMDI2MDcwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link">📍 地圖導航</a></div>
+            <div class="event"><span class="time">11:00</span> 新營服務區（南向）定時補給<a href="https://maps.app.goo.gl/8jRJVxZJuTvW1qhR7" target="_blank" class="map-link">📍 地圖導航</a></div>
+            <div class="event"><span class="time">12:00</span>🍔 午餐：丹丹漢堡 華夏店（南台灣限定美味）<a href="https://maps.app.goo.gl/1yiz1fCxMFjPcPa67" target="_blank" class="map-link">📍 地圖導航</a></div>
+            <div class="event"><span class="time">13:30</span>🚗 抵達飯店停放車輛、寄存行李</div>
+            <div class="event"><span class="time">14:00</span>🚇 體驗高雄捷運（橘線直達衛武營站）、開車也可以~<a href="https://maps.app.goo.gl/q7viTM77SdVgcBU5A" target="_blank" class="map-link">📍 地圖導航</a></div>
+            
+            <div class="event">
+                <span class="time">17:00</span>🎼 核心行程：衛武營草地音樂會<class="event"></div>
+                <img class="spot-img" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Wei-Wu-Ying_Center_for_the_Arts_01.jpg" alt="衛武營">
+                <div class="spot-desc">全球最大單一屋頂劇院，由荷蘭知名建築師法蘭馨·侯班 (Francine Houben) 操刀設計。以園區內盤根錯節的老榕樹群為靈感，打造出充滿流線感與穿透力的白色波浪外觀。</div>
+            </div>
+
+            <div class="event"><span class="time">18:30</span><br>🍜 晚餐：萬記古早味小吃或附近小吃<a href="https://maps.app.goo.gl/5Bx4waDJ8XxFkbcm7" target="_blank" class="map-link">📍 地圖導航</a>
+            <img class="spot-img" src="https://tb-static.uber.com/prod/image-proc/processed_images/81e0e18c683054d41852a5ed4e3b0d68/fb86662148be855d931b37d6c1e5fcbe.jpeg" alt="萬記古早味小吃">
+        <div class="spot-desc">位於高雄鳳山的萬記古早味小吃是飄香超過30年的台式傳統小吃店，主打經典銅板美食。招牌四大天王包含米糕、碗粿、麵線羹以及四神湯。</div>
+    </div>
+            <div class="event"><span class="time">19:30</span>🛌 回飯店休息</div>
+
+        <details>
+            <summary>🔍 查看 Day 1 詳細動線與實用資訊</summary>
+            <ul>
+                <li><strong>精準路程</strong>：每段開車皆控制在 1 至 1.5 小時內，國道休息站無縫對接。</li>
+                <li><strong>本日餐費結算</strong>：丹丹漢堡套餐 $800 + 萬記古早味小吃 $800 = $1,600。</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>💡 查看 Day 1 隱藏版美味與景點備案</summary>
+            <ul>
+                <li><strong>丹丹漢堡分店備案</strong>：鼎中店 (4.1⭐)、瀋陽店 (4.3⭐)、大昌店 (4.1⭐)，皆在交流道或往市區順路動線上。</li>
+                <li><strong>衛武營館內冷氣、書店</strong>：誠品書店、趣活設計劇落，若不想出館可在館內逛逛。</li>
+            </ul>
+        </details>
+
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">Day 2：7/20 (星期一) ｜ 著名景點與直笛演出</div>
+        <div class="timeline">
+            <div class="event"><span class="time">08:00</span>🍳 早餐自理</div>
+            
+            <div class="event">
+                <span class="time">09:00</span>🚂 景點：哈瑪星鐵道文化園區（駁二特區）<a href="https://maps.app.goo.gl/F9whJCqf8A6MkmQW8" target="_blank" class="map-link">📍 地圖導航</a>
+                <img class="spot-img" src="https://cdn2.ettoday.net/images/6302/d6302451.jpg" alt="駁二">
+                <div class="spot-desc">高雄最著名文創景點。大草皮極適合帶小孩搭乘特色「哈瑪星駁二線小火車」（單人$149），倉庫室內冷氣開放且皆有廁所。</div>
+            </div>
+
+            <div class="event">
+                <span class="time">10:30</span>🌊 景點：打狗英國領事館文化園區<a href="https://maps.app.goo.gl/weJe5Gc4Z8JuJAVXA" target="_blank" class="map-link">📍 地圖導航</a>
+                <img class="spot-img" src="https://khh.travel/image/18433/1920x1080" alt="英國領事館">
+                <div class="spot-desc">紅磚英式洋樓，可居高臨下飽覽絕美高雄港海景，且山頂設有古典玫瑰園可吹冷氣。</div>
+            </div>
+
+            <div class="event"><span class="time">12:00</span>🍲 午餐：聚客堂（4.9⭐）<a href="https://maps.app.goo.gl/frYm1F251Abmvnsi6" target="_blank" class="map-link">📍 地圖導航</a></div>
+            <img class="spot-img" src="https://i0.wp.com/hoolee.tw/wp-content/uploads/20230914002224_99.jpg?fit=1000%2C667&quality=100&ssl=1" alt="聚客堂">
+            <div class="spot-desc">主打手工水餃、海鮮鍋燒麵疙瘩、黃金泡菜與綿綿冰的熱門餐飲店</div>
+            <div class="event"><span class="time">14:00</span>🎶 核心行程：衛武營直笛音樂會<a href="https://maps.app.goo.gl/q7viTM77SdVgcBU5A" target="_blank" class="map-link">📍 地圖導航</a>
+            <img class="spot-img" src="https://www.npac-weiwuying.org/api/images/27b25d4b301fed3df6d5f447fb4f516a/1200/jpeg" alt="衛武營">
+            <div class="spot-desc">採用全臺灣唯一的葡萄園式座席設計，觀眾席環繞舞台，讓不同高度的觀眾都能享有絕佳的聲音與視野。</div>
+        </div>
+
+            <div class="event">
+                <span class="time">17:00</span>🎡 避暑放電：SKM Park 草衙道<a href="https://maps.app.goo.gl/AWB7mmnujPnaGunE7" target="_blank" class="map-link">📍 地圖導航</a>
+                <img class="spot-img" src="https://pic.pimg.tw/ksdelicacy/1462804579-2941543729.jpg?v=1462804619" alt="SKM Park">
+                <div class="spot-desc">完全避開夏日暴曬！室內冷氣強勁，直奔 4.9⭐ 是全台唯一結合日本鈴鹿賽道賽車樂園與美式風格 Outlet 購物的一站式休閒娛樂中心。</div>
+            </div>
+
+            <div class="event"><span class="time">18:00</span>🍚 晚餐：草衙道自行覓食</div>
+            <div class="event"><span class="time">19:30</span>🛌 回飯店解散休息</div>
+        </div>
+
+        <details>
+            <summary>🔍 查看 Day 2 詳細動線與實用資訊</summary>
+            <ul>
+                <li><strong>無敵車程表</strong>：駁二到領事館 5 分鐘、領事館到附近吃午餐 5 分鐘、草衙道 12分。車程短。</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>💡 查看 Day 2 隱藏版美味與景點備案</summary>
+            <ul>
+                <li><strong>頂級砂鍋粥備案</strong>：麟粥宮光華店 (4.8⭐)，砂鍋慢熬的海鮮粥，香氣驚人。</li>
+                <li><strong>SKM Park 內餐選擇多</strong>：初丼燒肉食事 (4.7⭐)、貳樓餐廳 (4.5⭐)等等。</li>
+            </ul>
+        </details>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">Day 3：7/21 (星期二) ｜ 故宮南院文藝之旅與北返</div>
+        <div class="timeline">
+            <div class="event"><span class="time">08:00</span>🍳 早餐自理，辦理退房，準時出發北上</div>
+            
+            <div class="event">
+                <span class="time">10:00</span>🏛️ 景點：國立故宮博物院南部院區<a href="https://maps.app.goo.gl/o3WTRZ6NMRxVjm137"_blank" class="map-link">📍 地圖導航</a>
+                <img class="spot-img" src="https://upload.wikimedia.org/wikipedia/commons/3/34/NPMSB_Moyun_Hall_and_Feibai_Hall.jpg" alt="故宮南院">
+                <div class="spot-desc">一座以「亞洲藝術文化」為主題的現代化博物館。園區內擁有獨特的流線型建築與廣闊的至善湖景致，是中台灣非常受歡迎的文化旅遊景點。</div>
+            </div>
+
+            <div class="event"><span class="time">13:00</span>🍱 午餐：築日食堂（4.8⭐ 故宮南院旁，精緻美味日系美食) <a href="https://maps.app.goo.gl/omjs5WZ8MKo3oFE9A" target="_blank" class="map-link">📍 地圖導航</a></div>
+            <img class="spot-img" src="https://linnote.com/wp-content/uploads/2025/08/zhu-ri-resturant-3.webp" alt="築日食堂">
+            <div class="event"><span class="time">14:30</span>🚗 啟程北返桃園</div>
+            <div class="event"><span class="time">15:00</span> 西螺服務區（北上）<a href="https://maps.app.goo.gl/C6vzRMLdA5CKpDh58" target="_blank" class="map-link">📍 地圖導航</a></div>
+            <div class="event"><span class="time">16:30</span>泰安服務區（北上備案）<a href="https://maps.app.goo.gl/EqWwUjcKgwpFMSmJ6" target="_blank" class="map-link">📍 地圖導航</a></div>
+            <div class="event"><span class="time">18:00</span>🏁 順利抵達桃園，平安到家</div>
+        </div>
+
+        <details>
+            <summary>🔍 查看 Day 3 詳細動線與實用資訊</summary>
+            <ul>
+                <li><strong>美食</strong>： 4.8 星的築日食堂，厚切豬排、滑蛋雞肉定食，美味、精緻。</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>💡 查看 Day 3 隱藏版美味與景點備案</summary>
+            <ul>
+                <li><strong>故宮南院旁下午茶甜點</strong>：Matcha Prince 抹茶專賣 (4.9⭐)，看完展覽後吃碗頂級抹茶冰，消暑滿分；亦可外帶朝霧茶莊 Tea18 (4.8⭐) 的現泡冷泡茶。</li>
+            </ul>
+        </details>
+    </div>
+
+</body>
+</html>
