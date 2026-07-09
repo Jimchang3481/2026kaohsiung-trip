@@ -1,0 +1,20 @@
+{
+  "short_name": "高雄旅遊",
+  "name": "高雄在地旅遊規劃 App",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "theme_color": "#2196F3"
+}

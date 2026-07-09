@@ -178,6 +178,20 @@
             background-color: #2563eb;
         }
     </style>
+    <!-- 引入 PWA 設定檔 -->
+<link rel="manifest" href="manifest.json">
+<!-- 設定行動裝置頂部狀態列顏色 -->
+<meta name="theme-color" content="#2196F3">
+<!-- 註冊 Service Worker 腳本 -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js')
+        .then((reg) => console.log('PWA 註冊成功！Scope 為：', reg.scope))
+        .catch((err) => console.log('PWA 註冊失敗：', err));
+    });
+  }
+</script>
 </head>
 <body>
 
